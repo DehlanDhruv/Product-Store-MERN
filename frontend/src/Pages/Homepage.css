@@ -1,0 +1,96 @@
+.homepageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 5px;
+}
+
+.inputFields > input{
+    width: 100%;
+    padding:0.3rem;
+    font-size: 1.1vw;
+    border-radius: 8px;
+}
+
+.saveButton{
+    font-size: 1vw;
+}
+
+.cardInfo >h1 , .cardInfo > p{
+    font-size: 1.1vw;
+}
+
+.cardContainer{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.productCard{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    height: fit-content;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 6px;
+    gap: 0.8w;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+}
+.productCard:hover {
+    transform: translateY(-5px); 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); 
+  }
+.productCard > img{
+    border-radius: 4px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.cardInfo{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+}
+
+
+@media(max-width:800px ) {
+
+    .homepageContainer{
+        padding-bottom: 15px;
+    }
+    .inputFields > input{
+        width: 90%;
+    }
+ 
+    .cardInfo > p , .cardInfo > h1 ,   .inputFields > input , .saveButton{
+        font-size: 16px;
+    }
+    
+    .cardContainer{
+        gap:14px;
+    }
+    .productCard{
+        width: 45%;
+    }
+    
+}
