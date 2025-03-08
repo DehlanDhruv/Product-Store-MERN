@@ -1,8 +1,7 @@
 import { Container, useColorModeValue, VStack  ,Input, Heading , Box , Button} from '@chakra-ui/react'
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { useDispatch } from 'react-redux'
 import { addProductToDB } from '../slice/productSlice'
-import axios from 'axios'
 
 const Createpage = () => {
     const dispatch = useDispatch();

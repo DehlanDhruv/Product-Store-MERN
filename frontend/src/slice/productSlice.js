@@ -1,9 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { act } from 'react';
 
-// Base URL for your backend API
-const BASE_URL = 'http://localhost:3000/api/products'; // Update with your actual backend URL
 
 // Async Thunks
 export const fetchProducts = createAsyncThunk('product/fetchProducts', async () => {
