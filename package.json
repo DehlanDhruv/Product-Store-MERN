@@ -5,10 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "cross-env NODE_ENV=production node backend/server.js", 
+    "build": "npm install && npm install --save-dev @babel/plugin-proposal-private-property-in-object && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "cross-env NODE_ENV=production node backend/server.js",
     "dev": "cross-env NODE_ENV=development nodemon backend/server.js"
-
   },
   "keywords": [],
   "author": "",
@@ -23,6 +22,7 @@
     "mongoose": "^8.3.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "cross-env": "^7.0.3",
     "nodemon": "^3.1.9"
   }

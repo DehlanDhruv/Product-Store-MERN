@@ -10,7 +10,7 @@ const __dirname= path.resolve()
 
 app.use(express.json()); 
 
-app.use('/api/products' , productRoutes)
+app.use('/api/products' , productRoutes);
 
 if(process.env.Node_ENV === 'production'){
     app.use(express.static(path.join(__dirname , './frontend/build')))
